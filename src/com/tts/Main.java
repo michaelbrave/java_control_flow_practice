@@ -18,6 +18,7 @@ public class Main {
         System.out.print("Would you like to continue?(yes, no):  ");
         String letContinue = scanner.next();
         if (letContinue == "yes" || letContinue == "y" || letContinue == "Yes") {
+            //string.toLowerCase.equals("Y") or string.equalsIgnoreCase()
             System.out.print("cool lets continue\n");
             System.out.print("1/6 Do you have a red car? (yes, no):\n");
             String car = scanner.next();
@@ -44,7 +45,7 @@ public class Main {
                 }
             System.out.print("4/6 What is two-digit model year of their car?\n");
             String year = scanner.next();
-                
+
             System.out.print("5/6 What is the first name of the their favorite actor or actress?\n");
             String actor = scanner.next();
             System.out.print("6/6 Enter a random number between 1 and 50.\n");
