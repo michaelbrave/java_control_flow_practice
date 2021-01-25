@@ -10,8 +10,14 @@ public class Main {
         String name = askName();
         int proceed = weProceed();
         int carNum = question1();
-
+        int luckyNum = question2();
+        int jerseyNum = question3();
+        int modelNum = question4();
+        int actorNum = question5();
+        int randoNum = question6();
+        numGen();
     }
+
     public static String askName() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Please enter your name:  ");     // type a word and hit enter
@@ -19,7 +25,7 @@ public class Main {
         System.out.printf("Hello %s\n", someString);
         return someString;
     }
-    pulbic static int weProceed() {
+    public static int weProceed() {
         Scanner scanner = new Scanner(System.in);
         System.out.print("Would you like to continue?(yes, no):  ");
         String letContinue = scanner.next();
@@ -31,8 +37,9 @@ public class Main {
             System.out.print("you've chosen to quit, exiting now, please return later to complete the survey");
             return 0;
         }
+        return 1;
     }
-    public static int carquestion1() {
+    public static int question1() {
         System.out.print("1/6 Do you have a red car? (yes, no):\n");
         String car = scanner.next();
         int carNum = 0;
@@ -52,6 +59,7 @@ public class Main {
         luckyNum += 10;
         luckyNum += lucky.charAt(1);
         }
+        return luckyNum;
     }
     public static int question3(){
         System.out.print("3/6 Do they have a favorite quarterback?  If so what is their jersey number?\n");
@@ -61,19 +69,29 @@ public class Main {
         if (jersey.charAt(1) >= 1) {
         jerseyNum += jersey.charAt(1);
         }
-}
-public static int question4(){
+        return jerseyNum;
+    }
+    public static int question4(){
         System.out.print("4/6 What is two-digit model year of their car?\n");
         String year = scanner.next();
-        }
-public static int question5(){
+        int modelNum = 0;
+        return modelNum;
+    }
+    public static int question5(){
         System.out.print("5/6 What is the first name of the their favorite actor or actress?\n");
         String actor = scanner.next();
-        }
-public static int question6(){
+        int actorNum = 0;
+        return actorNum;
+    }
+    public static int question6(){
         System.out.print("6/6 Enter a random number between 1 and 50.\n");
         String randomly = scanner.next();
-        } public static int numGen(){System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jersey, year, actor, randomly);}
+        int randoNum = 0;
+        return randoNum;
+    }
+    public static void numGen(){
+        System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randoNum);
+    }
 }
 
 // input.nextLine();
