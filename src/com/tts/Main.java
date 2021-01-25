@@ -59,8 +59,8 @@ public class Main {
     public static int question2(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("2/6 What is their lucky number?\n");
-        String lucky = scanner.next();
-        int luckyNum = lucky.charAt(0);
+        String lucky = scanner.next(); // error string index out of range
+        int luckyNum = (int)lucky.charAt(0);
         if (lucky.charAt(1) >= 1) {
             luckyNum += 10;
             luckyNum += lucky.charAt(1);
