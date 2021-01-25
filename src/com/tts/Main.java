@@ -14,8 +14,8 @@ public class Main {
         int jerseyNum = question3();
         int modelNum = question4();
         int actorNum = question5();
-        int randoNum = question6();
-        numGen(carNum, luckyNum, jerseyNum, modelNum, actorNum, randoNum);
+        int randomNum = question6();
+        numGen(carNum, luckyNum, jerseyNum, modelNum, actorNum, randomNum);
     }
 
     public static String askName() {
@@ -86,11 +86,11 @@ public class Main {
     public static int question6(){
         System.out.print("6/6 Enter a random number between 1 and 50.\n");
         String randomly = scanner.next();
-        int randoNum = 0;
-        return randoNum;
+        int randomNum = 0;
+        return randomNum;
     }
-    public static void numGen(int carNum, int luckyNum, int jerseyNum, int modelNum, int actorNum, int randoNum){
-        System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randoNum);
+    public static void numGen(int carNum, int luckyNum, int jerseyNum, int modelNum, int actorNum, int randomNum){
+        System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randomNum);
     }
 }
 
