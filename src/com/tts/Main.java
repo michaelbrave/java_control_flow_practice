@@ -15,7 +15,7 @@ public class Main {
         int modelNum = question4();
         int actorNum = question5();
         int randoNum = question6();
-        numGen();
+        numGen(carNum, luckyNum, jerseyNum, modelNum, actorNum, randoNum);
     }
 
     public static String askName() {
@@ -89,7 +89,7 @@ public class Main {
         int randoNum = 0;
         return randoNum;
     }
-    public static void numGen(){
+    public static void numGen(int carNum, int luckyNum, int jerseyNum, int modelNum, int actorNum, int randoNum){
         System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randoNum);
     }
 }
