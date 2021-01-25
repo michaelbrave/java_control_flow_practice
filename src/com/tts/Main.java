@@ -11,10 +11,8 @@ public class Main {
 
     }
     public static void survey() {
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Please enter your name:  ");     // type a word and hit enter
-        String someString = scanner.next();
-        System.out.printf("Hello %s\n", someString);
+        string name = askName();
+
         System.out.print("Would you like to continue?(yes, no):  ");
         String letContinue = scanner.next();
         if (letContinue == "yes" || letContinue == "y" || letContinue == "Yes") {
@@ -48,8 +46,10 @@ public class Main {
 
             System.out.print("5/6 What is the first name of the their favorite actor or actress?\n");
             String actor = scanner.next();
+
             System.out.print("6/6 Enter a random number between 1 and 50.\n");
             String randomly = scanner.next();
+
             System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jersey, year, actor, randomly);
         }
         else {
@@ -58,7 +58,13 @@ public class Main {
         }
 
     }
-    public  static void question1() {
+    public static void askName() {
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Please enter your name:  ");     // type a word and hit enter
+        String someString = scanner.next();
+        System.out.printf("Hello %s\n", someString);
+    }
+    public static void question1() {
 
     }
 }
