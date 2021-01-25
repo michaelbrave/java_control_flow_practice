@@ -7,7 +7,7 @@ public class Main {
         AsciiChars.printNumbers();
         AsciiChars.printLowerCase();
         AsciiChars.printUpperCase();
-        survey();
+        //survey();
 
     }
     public static void survey() {
@@ -22,11 +22,15 @@ public class Main {
             System.out.print("1/6 Do you have a red car? (yes, no):\n");
             String car = scanner.next();
             int carNum = 0;
-            if (car == "yes") {
+            if (car.equals("yes")) {
                 carNum = 10;
+            }
+            else {
+                carNum = 7;
             }
             System.out.print("2/6 What is their lucky number?\n");
             String lucky = scanner.next();
+            int luckyNum = lucky.charAt(0);
             System.out.print("3/6 Do they have a favorite quarterback?  If so what is their jersey number?\n");
             String jersey = scanner.next();
             System.out.print("4/6 What is two-digit model year of their car?\n");
@@ -35,7 +39,7 @@ public class Main {
             String actor = scanner.next();
             System.out.print("6/6 Enter a random number between 1 and 50.\n");
             String randomly = scanner.next();
-            System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, lucky, jersey, year, actor, randomly);
+            System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jersey, year, actor, randomly);
         }
         else {
             System.out.print("you've chosen to quit, exiting now, please return later to complete the survey");
