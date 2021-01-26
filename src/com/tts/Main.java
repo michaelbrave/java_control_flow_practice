@@ -78,13 +78,7 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("5/6 What is the first name of the their favorite actor or actress?\n");
         String actor = scanner.next();
-        int actorNum = 0;
-        if (actor.charAt(0) >= 'a' || actor.charAt(0) >= 'g') {
-            actorNum = 15;
-        }
-        else {
-            actorNum = 27;
-        }
+        int actorNum = actor.charAt(0) -'0';
         return actorNum;
     }
     public static int question6(){
@@ -94,7 +88,7 @@ public class Main {
         return randomNum;
     }
     public static void numGen(int carNum, int luckyNum, int jerseyNum, int modelNum, int actorNum, int randomNum){
-        System.out.printf("your lucky numbers are: %d %d %d %d %d %6\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randomNum);
+        System.out.printf("your lucky numbers are: %d %d %d %d %d %d\n", carNum, luckyNum, jerseyNum, modelNum, actorNum, randomNum);
     }
 }
 
