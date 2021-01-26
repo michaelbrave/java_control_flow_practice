@@ -78,7 +78,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.print("5/6 What is the first name of the their favorite actor or actress?\n");
         String actor = scanner.next();
-        int actorNum = actor.charAt(0);
+        int actorNum = 0;
+        if (actor.charAt(0) >= 'a' || actor.charAt(0) >= 'g') {
+            actorNum = 15;
+        }
+        else {
+            actorNum = 27;
+        }
         return actorNum;
     }
     public static int question6(){
